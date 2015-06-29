@@ -1,4 +1,6 @@
 .data 
+message1: .asciiz"Digite o número correspondente ao instrumento:\n1 - Piano \n2 - Xilofone \n3 - Flauta \n4 - Teclado com efeitos"
+message2: .asciiz"Número inválido, digite novamente:\n1 - Piano \n2 - Xilofone \n3 - Flauta \n4 - Teclado com efeitos"
 #notes:	.word 64,64,64,60,64,67,55,72,55,52,69,71,70,69,67,64,67,69,65,67,64,72 #array with notes
 
 filein: .asciiz "entrada.txt"      # filename for input
@@ -7,6 +9,42 @@ filein: .asciiz "entrada.txt"      # filename for input
 notes: .byte 64
 
 .text
+
+la $a0, message1
+ori $v0, 51
+syscall
+
+INVALIDA:move $t2, $a0 #preenche com instrumentos 
+beq $t2, 1, PIANO
+nop
+beq $t2, 2, XILOFONE
+nop
+beq $t2, 3, FLAUTA
+nop
+beq $t2, 4, TECLADO
+nop
+
+#opção invalida.
+la $a0, message2
+ori $v0, 51
+syscall
+j INVALIDA
+nop
+
+PIANO: ori $t2, $zero, 2
+j OK
+nop
+XILOFONE: ori $t2, $zero, 10
+j OK
+nop
+FLAUTA: ori $t2, $zero, 70
+j OK
+nop
+TECLADO: ori $t2, $zero, 100
+OK: nop
+
+
+
 #open a file for reading
 li   $v0, 13       	# system call for open file
 la   $a0, filein      	# board file name
@@ -14,6 +52,8 @@ li   $a1, 0	        # Open for reading
 li   $a2, 0
 syscall            	# open a file (file descriptor returned in $v0)
 move $s6, $v0      	# save the file descriptor 
+
+
 
 #read from file
 li   $v0, 14       	# system call for read from file
@@ -57,11 +97,11 @@ nop
 
 	playsound:	
 move $a0, $t1
-li $a1, 80	#time in milisseconds
-li $a2, 114	#instrument - 114 Percussion
+li $a1, 140	#time in milisseconds
+move $a2, $t2	#instrument selecionado
 li $a3, 120	#volume	
 la $v0, 33
-
+#2 piano, 10 chromatic percussion, 70 Reed , 100 synth effects, 
 syscall         #calls service 33, playing music
 jr $ra		#come back afterPlaysound
 nop
