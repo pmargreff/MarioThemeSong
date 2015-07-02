@@ -1,0 +1,43 @@
+nota (tom)  - E  E   E  C   E    G   g   
+nota (mars) - 64 64  64 60  64   67  55
+intervalo -   1  2   1   1   2   3   3
+char 		-
+nota (tom)  - C   g  e  a  b  b# a   g   E  G  A  F  G  E  C  D  b   repete duas vezes  
+nota (mars) - 72  55 52 57 71 70 69  67 64 67 69 65 67 64 60 62 59
+intervalo -    2   1  2  2  1  2  2  2   1   2  1  1  2  1  1  3  3 
+char 		-
+nota (tom)  - G  F# E  D#  E  / g# a  C  a  C  D *
+nota (mars) - 72 55 52 57  71 / 70 57 72 57 55 62    
+intervalo -   1  2   1  1  2    3   3  2  1  2  2
+char 		-
+nota (tom)  - G  F# E  D# E  C  C  C+ *
+nota (mars) - 67 66 64 63 64 72 72 84
+intervalo -    1  2  1  1  3  1  1  1
+char 		-
+nota (tom)  - G  F# E  D# E  / g# a  C  a  C  D  E# D  C  *		repetir tudo junto 2 x
+nota (mars) - 67 66 64 63 64 / 56 57 72 57 72 62 65 62 72  *
+intervalo -    2  1  1  1  1   2   1  1  1  1   1 2  1  2 
+char 		-
+nota (tom)  - C  C  C  C  D  E  C  a  g /  C  C  C  C  D  E 
+nota (mars) - 72 72 72 72 62 64 72 57 55 / 72 72 72 72 62 64
+intervalo -    
+char 		-
+nota (tom)  - C C C C D E C a g / E E E C E G g
+nota (mars) - 72 72 72 72 62 64 72 57 55 / 64 64 64 72 64 67 55
+intervalo -
+char 		-
+nota (tom)  - C  g  e  a  b  b# a  g * 
+nota (mars) - 72 55 52 57 59 60 57 55 
+intervalo -
+char 		-
+nota (tom)  - E  G  A  F  G  E  C  D  b * repetir duas vezes
+nota (mars) - 64 67 69 65 67 64 72 62 59
+intervalo -
+char 		-
+nota (tom)  - E  C  g  g# a  F  F# / b  A  A  A  G  F  E  D  a  g
+nota (mars) - 64 72 55 56 57 65 66 / 59 69 69 69 67 65 64 62 57 55
+intervalo -
+char 		-
+nota (tom)  - E  C  g  g# a  F  F# / B  F  F  F  E  D  C  
+nota (mars) - 64 72 55 56 57 65 66 / 71 65 65 65 64 62 72  
+char 		-
