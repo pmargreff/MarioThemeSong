@@ -1,12 +1,13 @@
 # MarioThemeSong
+
 ## Apresentação
 
 Universidade Federal de Pelotas Bacharelado em Ciência da Computação
 
 Disciplina de Arquitetura e Organizaçao de Computadores (Prática)
 
-Pablo Margreff - 14100513 - pmargreff@inf.ufpel.edu.br
-Kellerson Kurtz - 14100507 - kkurtz@inf.ufpel.edu.br
+* Pablo Margreff - 14100513 - pmargreff@inf.ufpel.edu.br
+* Kellerson Kurtz - 14100507 - kkurtz@inf.ufpel.edu.br
 
 Plays Super Mario theme song in mips assembly
 
@@ -17,6 +18,6 @@ Plays Super Mario theme song in mips assembly
 
 ## Como usar
 
-* Coloque o arquivo `mario.txt` dentro da pasta onde está instalado o MARS
-* Abra o arquivo `teclado.asm` no MARS e execute
+* Coloque o arquivo `mario.txt` dentro da pasta onde o MARS está instalado 
+* Abra o arquivo `teclado.asm` no MARS e o execute
 
